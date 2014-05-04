@@ -1,0 +1,24 @@
+{
+  "name": "npm-typeahead",
+  "version": "0.0.0",
+  "description": "Perform typeahead searchs for npm packages.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha -u bdd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bcoe/npm-typeahead.git"
+  },
+  "keywords": [
+    "npm",
+    "search",
+    "typeahead"
+  ],
+  "author": "Benjamin Coe <ben@npmjs.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bcoe/npm-typeahead/issues"
+  },
+  "homepage": "https://github.com/bcoe/npm-typeahead"
+}
