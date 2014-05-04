@@ -4,7 +4,7 @@
   "description": "Perform typeahead searchs for npm packages.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "./node_modules/.bin/browserify assets/js/main.js > assets/js/include.js",
+    "build": "./node_modules/.bin/browserify assets/js/*.js | uglifyjs > assets/js/include.js",
     "test": "./node_modules/.bin/mocha -u bdd"
   },
   "repository": {
@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "browserify": "^3.46.0",
-    "mocha": "^1.18.2"
+    "mocha": "^1.18.2",
+    "uglify-js": "^2.4.13"
   }
 }
