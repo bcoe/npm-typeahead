@@ -1,9 +1,9 @@
 var assert = require('assert'),
-  Server = require('../lib').Server;
+  Search = require('../lib').Search;
 
 describe("Server", function() {
 
-  describe("start", functino() {
+  describe("start", function() {
 
     it('should start the restify server', function() {
 
