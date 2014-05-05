@@ -26,7 +26,8 @@
     "restify": "^2.7.0",
     "typeahead.js": "^0.10.2",
     "jquery": "^2.1.1",
-    "elasticsearch": "^2.1.4"
+    "elasticsearch": "^2.1.4",
+    "lodash": "^2.4.1"
   },
   "devDependencies": {
     "browserify": "^3.46.0",
