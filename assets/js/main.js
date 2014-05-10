@@ -1,5 +1,5 @@
 // Browser-side code for performing
-// type-ahead searches. Uses browserify
+// typeahead searches. Uses browserify
 // to include dependencies.
 // build assets using: npm run-script build.
 var $ = window.jQuery = require('jquery');
@@ -23,7 +23,7 @@ $(document).ready(function() {
 
   engine.initialize();
 
-  // attach the type-ahead extension to
+  // attach the typeahead extension to
   // our search box using jQuery.
   $('#package-search .typeahead').typeahead(
     {

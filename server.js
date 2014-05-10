@@ -1,5 +1,5 @@
-// KISS web-server using Restify. Exposes a
-// a search interface for packages in npm.
+// KISS web-server using Restify. Exposes
+// a search interface for packages on npm.
 // run using: npm start
 // build assets using: npm run-script build.
 var restify = require('restify'),
