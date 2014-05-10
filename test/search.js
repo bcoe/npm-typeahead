@@ -1,3 +1,5 @@
+// Tests for server-side search functionality.
+// run using: npm test
 var assert = require('assert'),
   Search = require('../lib').Search,
   _ = require('lodash');
@@ -15,7 +17,7 @@ describe("Search", function() {
     var search = new Search();
     search.search('lod', function(err, packages) {
       var selected = _.select(packages, function(package) {
-        return package.indexOf('lod') > -1;
+        return package.value.indexOf('lod') > -1;
       });
       assert.equal(selected.length, 50);
       return done();
