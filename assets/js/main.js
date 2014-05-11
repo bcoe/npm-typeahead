@@ -1,12 +1,15 @@
-// Browser-side code for performing
-// typeahead searches. Uses browserify
-// to include dependencies.
-// build assets using: npm run-script build.
+// Browser-side code for performing typeahead searches.
+// Uses browserify to manage browser-dependencies.
+//
+// build assets: npm run-script build.
+// run: npm start
 var $ = window.jQuery = require('jquery');
-var typeahead = require('typeahead.js');
+var typeahead = require('typeahead.js'),
+  npmUrl = 'https://www.npmjs.org';
 
-// bootstrap typeahead suggestions
-// once the document finishes loading
+// wait until the document finishes loading,
+// so that we know all the DOM elements will
+// be there.
 $(document).ready(function() {
 
   // Create the engine, used to interact
@@ -25,7 +28,7 @@ $(document).ready(function() {
 
   // attach the typeahead extension to
   // our search box using jQuery.
-  $('#package-search .typeahead').typeahead(
+  var typeahead = $('#package-search .typeahead').typeahead(
     {
       hint: true,
       highlight: true,
@@ -37,4 +40,25 @@ $(document).ready(function() {
       source: engine.ttAdapter()
     }
   );
+
+  // if we hit enter, perform a search.
+  $('#search-container').on('keypress', function(event) {
+    if (event.keyCode == 13) {
+      window.location.href = npmUrl + '/search?q=' + typeahead.typeahead('val');
+    }
+  });
+
+  // if we auto-complete, or click a package,
+  // open the package directly on npm.
+  var packagePage = function() {
+    return npmUrl + '/package/' + typeahead.typeahead('val');
+  };
+
+  typeahead.on('typeahead:selected', function() {
+    window.location.href = packagePage();
+  });
+
+  typeahead.on('typeahead:autocompleted', function() {
+    window.location.href = packagePage();
+  });
 });

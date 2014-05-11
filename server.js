@@ -17,7 +17,7 @@ server.get('/search', function(req, res, cb) {
 });
 
 // serve static JavaScript and CSS.
-server.get(/\/js|css\/?.*/, restify.serveStatic({
+server.get(/\/js|css|images\/?.*/, restify.serveStatic({
   directory: './assets'
 }));
 
