@@ -4,6 +4,5 @@ services:
 node_js:
   - "0.11"
   - "0.10"
-  - "0.8"
 env:
   secure: "LURhgUbr5KE45mOL0tv4f4DBdf9uc5mRfnZCZRPy8nrDIWumUPIazOtGBVTMej0CGf1Tuas4QNgYYXXUaGednlsfpUeIFtPzBtJUVfUfAh/99JtuzpvBix2Fjvk0wxFpw62xKuAVGAnknfLjBm2zeRq4OR0wH8t3+EdHbNQYeL8="

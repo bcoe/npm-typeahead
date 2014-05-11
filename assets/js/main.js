@@ -1,15 +1,15 @@
 // Browser-side code for performing typeahead searches.
 // Uses browserify to manage browser-dependencies.
 //
+// start server: npm start
 // build assets: npm run-script build.
-// run: npm start
 var $ = window.jQuery = require('jquery');
 var typeahead = require('typeahead.js'),
   npmUrl = 'https://www.npmjs.org';
 
 // wait until the document finishes loading,
-// so that we know all the DOM elements will
-// be there.
+// so that we know all of DOM elements will
+// be bindable.
 $(document).ready(function() {
 
   // Create the engine, used to interact

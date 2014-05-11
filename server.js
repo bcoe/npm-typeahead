@@ -1,7 +1,8 @@
-// KISS web-server using Restify. Exposes
-// a search interface for packages on npm.
-// run using: npm start
-// build assets using: npm run-script build.
+// lightweight web-server using Restify. Implements
+// a typeahead search interface for packages on npm.
+//
+// start server: npm start
+// build assets: npm run-script build.
 var restify = require('restify'),
   server = restify.createServer(),
   search = new (require('./lib').Search);
