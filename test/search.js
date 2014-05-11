@@ -15,11 +15,11 @@ describe("Search", function() {
 
   it('should return packages beginning with the prefix provided', function(done) {
     var search = new Search();
-    search.search('lod', function(err, packages) {
+    search.search('nod', function(err, packages) {
       var selected = _.select(packages, function(package) {
-        return package.value.indexOf('lod') > -1;
+        return package.value.indexOf('nod') > -1;
       });
-      assert.equal(selected.length, 50);
+      assert.equal(selected.length, 49);
       return done();
     });
   });
