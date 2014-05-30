@@ -11,6 +11,9 @@ server.use(restify.queryParser());
 
 // lookup packages by their name.
 server.get('/search', function(req, res, cb) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+
   search.search(req.params.q, function(err, results) {
     res.send(results);
     cb();
