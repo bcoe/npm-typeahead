@@ -6,7 +6,7 @@
 var $ = window.jQuery = require('jquery');
 
 require('../../lib/browser')({
-  npmUrl: 'https://www.nmjs.org',
+  npmUrl: 'https://www.npmjs.org',
   searchUrl: '',
   $: $
 });
