@@ -21,3 +21,19 @@ Usage
 * **npm test:** run the mocha unit tests.
 * **npm start:** run the web-server.
 * **npm run-script build:** build the client-side dependencies.
+
+Integration With Browserify
+---------------------
+
+_npm-typeahead_ exposes client-side bindings, so that it can be used in other sites, e.g., npm-www.
+
+* use `npm install npm-typeahead --save` to add the npm-typeahead dependency.
+* add the following snippet of code to your project,
+
+```javascript
+require('npm-typeahead')({
+  npmUrl: 'https://www.nmjs.org',// URL to re-direct the user to.
+  searchUrl: '', // URL for search npm-typeahead REST server.
+  $: $ // jQuery dependency.
+});
+```

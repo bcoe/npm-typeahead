@@ -1,7 +1,7 @@
 {
   "name": "npm-typeahead",
   "version": "0.0.0",
-  "description": "Perform typeahead searchs for npm packages.",
+  "description": "typeahead search for npm packages.",
   "main": "lib/index.js",
   "scripts": {
     "build": "./node_modules/.bin/browserify assets/js/*.js | uglifyjs > assets/js/include.js",
@@ -33,5 +33,6 @@
     "browserify": "^3.46.0",
     "mocha": "^1.18.2",
     "uglify-js": "^2.4.13"
-  }
+  },
+  "browser": "./lib/browser.js"
 }
