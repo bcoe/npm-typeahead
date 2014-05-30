@@ -25,7 +25,7 @@ Usage
 Integration With Browserify
 ---------------------
 
-_npm-typeahead_ exposes client-side bindings, so that it can be used in other sites, e.g., npm-www.
+_npm-typeahead_ exposes client-side bindings, so that it can be used in other sites, e.g., _npm-www_.
 
 * use `npm install npm-typeahead --save` to add the npm-typeahead dependency.
 * add the following snippet of code to your project,
