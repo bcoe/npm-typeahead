@@ -4,9 +4,17 @@
 // start server: npm start
 // build assets: npm run-script build.
 var restify = require('restify'),
-  server = restify.createServer(),
+  fs = require('fs'),
+  serverOpts = {},
   search = new (require('./lib').Search);
 
+// Support running typeahead service with SSL.
+if (process.env.KEY) {
+  serverOpts.key = fs.readFileSync(process.env.KEY);
+  serverOpts.certificate = fs.readFileSync(process.env.CERTIFICATE);
+}
+
+var server = restify.createServer(serverOpts);
 server.use(restify.queryParser());
 
 // lookup packages by their name.
