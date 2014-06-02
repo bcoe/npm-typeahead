@@ -4,7 +4,7 @@
   "description": "typeahead search for npm packages.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "./node_modules/.bin/browserify assets/js/*.js | uglifyjs > assets/js/include.js",
+    "prestart": "./node_modules/.bin/browserify assets/js/*.js | uglifyjs > assets/js/include.js",
     "test": "./node_modules/.bin/mocha -u bdd"
   },
   "repository": {
