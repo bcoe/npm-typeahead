@@ -83,3 +83,12 @@ body {
   outline: 0;
   background-color: #428bca;
 }
+.tt-footer {
+  background-color: rgba(0.2, 0.2, 0.2, 0.2);
+  text-transform: italic;
+  margin-left: 8px;
+  color: #cc3d33;
+}
+.tt-footer a {
+  color: #cc3d33;
+}
