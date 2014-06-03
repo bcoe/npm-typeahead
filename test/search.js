@@ -19,7 +19,7 @@ describe("Search", function() {
       var selected = _.select(packages, function(package) {
         return package.value.indexOf('nod') > -1;
       });
-      assert.equal(selected.length, 49);
+      assert.equal(selected.length, 10);
       return done();
     });
   });
