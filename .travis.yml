@@ -4,4 +4,4 @@ services:
 node_js:
   - "0.10"
 env:
-  secure: "E3S/S7p/4cGNp9cCWwsmlccdp2DHXAzXp1pfdC7nuulbpDxWrK7L0wlsiF6f4PvgSfy9I7dmbj4sINS5IjA4BAkJiwTgOcv6d2fTQxH+vsJ1/r1I6zQ1qaA//wy+ieGDNdEQa9I0t9qDIwecUJ6vHJm5QXy+LiNIk96gQKjIJ5c="
+  secure: "PRaWdR5cSKEaf1sETbMS1yKxOROHo46dHknupu/2+TJ4QQ4xqGhpFtYtcga48L15vOm7RbGdwT3m9Ojv5gWtriBW16EoTZav+MIDJgKwOdb16WEurwdPZVZY41FTZt2O0j9c7JgYud3jPF1eHxYrBocmpeGlstvcCkOPcljOGZ0="
